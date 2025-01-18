@@ -129,8 +129,8 @@ const DummyContent3 = () => {
               thought.
             </p>
             <Image
-              src="/images/Docusphere.png"
-              src1="/images/ContentDoc.png"
+              src="/images/ContentDoc.png"
+              src1="/images/"
               src2="/images/FileContent.png"
               alt="Macbook mockup from Aceternity UI"
               height={500}
