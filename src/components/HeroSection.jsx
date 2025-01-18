@@ -18,9 +18,7 @@ const HeroSection = () => {
               <h2 className="bg-clip-text text-transparent text-start bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-2xl md:text-4xl lg:text-7xl font-sans py-2 md:py-10 relative z-20 font-bold tracking-tight">
             Shivani BS, <br /> Full Stack <Cover> Developer</Cover>
           </h2>
-          <a href="#" className="text-white border-b border-1 border-[#525252] hover:p-[10px] hover:bg-[#5070ff2f] transition-all ease-out mr-auto py-[10px] font-[600]">
-            Hire me &rarr;
-          </a>
+          
           <div className="flex flex-row mt-[60px]"></div>
             
             </div>
@@ -39,9 +37,7 @@ const HeroSection = () => {
             />
           </div>
           <div className="w-[90%] mx-auto py-[30px] flex flex-col items-center z-2">
-            <a href="#" className="max-w-[130px] w-full h-[40px] flex justify-center items-center border border-1 border-[#333333] text-white font-[600] rounded-[30px] mx-auto pb-[2px]">
-              Hire Me
-            </a>
+           
             <h2 className="bg-clip-text mt-[100px] text-transparent text-start mr-auto bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-2xl md:text-2xl lg:text-3xl font-sans   relative z-20 font-bold tracking-tight">
             About Me 
           </h2>
