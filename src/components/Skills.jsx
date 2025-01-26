@@ -80,10 +80,10 @@ const Skeleton = () => {
           <GoCopilot className="h-6 w-6 dark:text-white" />
         </Container>
         <Container className="circle-3">
-          <img src="shivani/public/images/nextjs-logo.svg" alt="React" className="h-8 w-8 dark:text-white" />
+          <img src="/shivani/public/images/nextjs-logo.svg" alt="React" className="h-8 w-8 dark:text-white" />
         </Container>
         <Container className="h-12 w-12 circle-4">
-          <img src="/images/nextjs-logo.png" alt="Next.js" className="h-6 w-6 " />
+          <NextjsLogo className="h-6 w-6 " />
         </Container>
         <Container className="h-8 w-8 circle-5">
           <MetaIconOutline className="h-4 w-4 " />
@@ -274,5 +274,35 @@ export const MetaIconOutline = ({
         fill="url(#linear-gradient-2)"
         d="M82.35,31.23c-12.27,0-22.69,8.61-31.41,21.78C38.61,71.62,31.06,99.34,31.06,126c0,11,2.41,19.41,5.56,24.51L10.14,167.91C3.34,156.6,0,141.76,0,124.85,0,94.1,8.44,62.05,24.49,37.3,38.73,15.35,59.28,0,82.85,0Z" />
     </svg>)
+  );
+};
+
+export const ReactLogo = ({ className }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 841.9 595.3"
+      className={className}
+    >
+      <g fill="#61DAFB">
+        <path d="M420.9 0C188.5 0 0 188.5 0 420.9s188.5 420.9 420.9 420.9 420.9-188.5 420.9-420.9S653.3 0 420.9 0zm0 780.3c-198.5 0-359.4-160.9-359.4-359.4S222.4 61.5 420.9 61.5 780.3 222.4 780.3 420.9 619.4 780.3 420.9 780.3z" />
+        <path d="M420.9 174.5c-136.5 0-247.5 111-247.5 247.5s111 247.5 247.5 247.5 247.5-111 247.5-247.5-111-247.5-247.5-247.5zm0 440.3c-106.5 0-193.8-87.3-193.8-193.8s87.3-193.8 193.8-193.8 193.8 87.3 193.8 193.8-87.3 193.8-193.8 193.8z" />
+      </g>
+    </svg>
+  );
+};
+
+export const NextjsLogo = ({ className }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 128 128"
+      className={className}
+    >
+      <path fill="#000" d="M0 0h128v128H0z" />
+      <path fill="#fff" d="M64 0l64 64-64 64L0 64 64 0z" />
+      <path fill="#000" d="M64 0l64 64-64 64L0 64 64 0z" />
+      <path fill="#000" d="M38.4 32.8h51.2l-25.6 25.6 25.6 25.6H38.4l25.6-25.6-25.6-25.6z" />
+    </svg>
   );
 };
