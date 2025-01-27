@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Cover } from "@/components/ui/cover";
-import { Skills } from "@/components/Skills"
+
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
 
@@ -49,7 +49,7 @@ const HeroSection = () => {
           I’m always eager to explore new tools and frameworks that enhance my skills. With every project, 
           I strive to grow as a developer and craft seamless, impactful digital experiences.
           </p>
-          <Skills/>
+         
           <ShootingStars className="z-[-1]"/>
           <StarsBackground className="z-[-1]"/>
           
