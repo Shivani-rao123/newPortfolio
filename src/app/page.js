@@ -3,7 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import {Services} from "@/components/Services";
 import {Projects} from "@/components/Projects"
 import { Resume } from "@/components/Resume";
-import Contact from "@/components/Contact";
+import {Contact} from "@/components/Contact";
 
 
 
