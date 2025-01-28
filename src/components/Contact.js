@@ -89,7 +89,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="max-w-[800px] backdrop-blur-[18px] bg-[#11121617] z-[20] w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black">
+    <div className="max-w-[800px] backdrop-blur-[18px] bg-[#11121617] z-[20] w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black" id="contact">
       <h2 className="font-bold text-4xl text-neutral-800 dark:text-neutral-200">
         Contact Me
       </h2>
