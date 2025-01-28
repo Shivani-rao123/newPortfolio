@@ -174,11 +174,6 @@ const data = [
     src: "/images/Docusphere.png",
    content: <DummyContent3/>,
   },
-  {
-    category: "project 4",
-    title: "Tweet generating app ",
-    src: "",
-    content: <DummyContent />,
-  },
+ 
  
 ];

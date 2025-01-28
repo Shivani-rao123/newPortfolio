@@ -1,22 +1,20 @@
+// src/app/page.js
+
 import HeroSection from "@/components/HeroSection";
-
-import {Services} from "@/components/Services";
-import {Projects} from "@/components/Projects"
+import { Services } from "@/components/Services";
+import { Projects } from "@/components/Projects";
 import { Resume } from "@/components/Resume";
-import {Contact} from "@/components/Contact";
-
-
+// Default import for Contact component
+import Contact from "@/components/Contact";
 
 export default function Home() {
-  return(
+  return (
     <>
-      <HeroSection/>
-      <Services/>
-      <Projects/>
-      <Resume/>
-      <Contact/>
-     
+      <HeroSection />
+      <Services />
+      <Projects />
+      <Resume />
+      <Contact />
     </>
-  )
- 
+  );
 }
