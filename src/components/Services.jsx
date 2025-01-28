@@ -62,7 +62,7 @@ export function Services() {
     },
   ];
   return (
-    <div className="mt-[150px flex flex-col]">
+    <div className="mt-[150px flex flex-col] " id="services">
     <div className="px-8 flex flex-col justify-center items-center">
     <h2 className="bg-clip-text  text-white  text-transparent text-start bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-2xl md:text-4xl lg:text-5xl font-sans py-2 md:py-10 relative z-20 font-bold tracking-tight">
            <Cover> Skills </Cover>
