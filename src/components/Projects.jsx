@@ -31,7 +31,7 @@ const DummyContent = () => {
               className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
               <span className="font-bold text-neutral-700 dark:text-neutral-200">
                 Placement Website
-              </span>{" "}
+              </span>&nbsp;
               I have developed a comprehensive placement website designed to streamline the recruitment process by providing
                recruiters with easy access to detailed student profiles in advance. This platform serves as a centralized hub where all 
                relevant student information, including academic records, skills, and achievements, is readily available to hiring 
@@ -65,7 +65,7 @@ const DummyContent1 = () => {
               className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
               <span className="font-bold text-neutral-700 dark:text-neutral-200">
                Flappy bird game
-              </span>{" "}
+              </span>&nbsp;
               I have developed a simple yet engaging Flappy Bird game using Java and JavaScript, combining the power of both languages to 
               create a smooth and interactive gaming experience. The game features a classic side-scrolling mechanism where players 
               
@@ -98,7 +98,7 @@ const DummyContent2 = () => {
               className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
               <span className="font-bold text-neutral-700 dark:text-neutral-200">
                 Weather app
-              </span>{" "}
+              </span>&nbsp;
               I have developed a weather application that leverages a powerful Weather API to fetch real-time weather data. 
               By simply entering a location, users can instantly retrieve essential weather details such as temperature, humidity,
                and atmospheric conditions. The API integration ensures accurate and up-to-date information, 
@@ -130,7 +130,7 @@ const DummyContent3 = () => {
               className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
               <span className="font-bold text-neutral-700 dark:text-neutral-200">
                Docusphere
-              </span>{" "}
+              </span>&nbsp;
               I have developed a project named DocuSphere, a file management system built using React and Firebase. 
               This platform allows users to log in and efficiently manage their files and folders, offering functionalities such as adding, 
               deleting, and moving them. Additionally, users can edit the contents of a file, save changes, and download files for offline access.
@@ -164,7 +164,7 @@ const DummyContent4 = () => {
               className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
               <span className="font-bold text-neutral-700 dark:text-neutral-200">
                Festival Calendar and Exploration Hub
-              </span>{" "}
+              </span>&nbsp;
               I have developed a website called Festival Calendar and Exploration Hub, designed to provide a comprehensive cultural festival calendar featuring traditional celebrations from around the world. 
               Users can explore festivals by region, culture, or month, learning about their significance through integrated multimedia such as images and videos. 
               The website also includes a reminder feature for favorite festivals, utilizing the Google Calendar API for seamless notifications. 
