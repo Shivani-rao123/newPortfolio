@@ -1,10 +1,8 @@
-// src/components/Contact.js
-
 "use client"; // <-- Add this line
 
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
-
+import { BackgroundLines } from "@/components/ui/background-lines";
 
 export default function Contact() {
   const [loadingMessage, setLoadingMessage] = useState({
@@ -50,6 +48,7 @@ export default function Contact() {
         email: formData.email,
         message: formData.message,
       };
+      
 
       const response = await emailjs.send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
@@ -89,17 +88,16 @@ export default function Contact() {
 
   return (
     <div className="relative w-full h-screen overflow-hidden">
-     
-
-      <div className="absolute inset-0 bg-black bg-opacity-50 z-10">
-        <div className="max-w-[800px] backdrop-blur-[18px] bg-[#11121617] w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black z-20">
-          <h2 className="font-bold text-4xl text-neutral-800 dark:text-neutral-200">
+      <BackgroundLines className="absolute inset-0 w-full h-full" />
+      <div className="absolute inset-0 bg-black bg-opacity-50 z-10 flex items-center justify-center">
+        <div className="max-w-[600px] backdrop-blur-[10px] bg-[#11121617] w-full mx-auto rounded-lg p-4 md:p-6 shadow-input bg-white dark:bg-black z-20">
+          <h2 className="font-bold text-3xl text-neutral-800 dark:text-neutral-200 text-center">
             Contact Me
           </h2>
 
           {loadingMessage.message && (
             <p
-              className={`mt-[20px] text-[0.9rem] ${
+              className={`mt-[10px] text-sm text-center ${
                 loadingMessage.success ? "text-green-400" : "text-red-400"
               }`}
             >
@@ -107,9 +105,9 @@ export default function Contact() {
             </p>
           )}
 
-          <form className="my-8" onSubmit={handleSubmit}>
-            <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
-              <div className="flex flex-col space-y-2 w-full">
+          <form className="my-6" onSubmit={handleSubmit}>
+            <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-3">
+              <div className="flex flex-col space-y-1 w-full">
                 <label htmlFor="firstname">First name</label>
                 <input
                   id="firstname"
@@ -118,10 +116,10 @@ export default function Contact() {
                   onChange={handleChange}
                   placeholder="Tyler"
                   type="text"
-                  className="p-[10px] rounded-[4px] outline-none border-none bg-zinc-800 text-white"
+                  className="p-[8px] rounded-[4px] outline-none border-none bg-zinc-800 text-white text-sm"
                 />
               </div>
-              <div className="flex flex-col space-y-2 w-full">
+              <div className="flex flex-col space-y-1 w-full">
                 <label htmlFor="lastname">Last name</label>
                 <input
                   id="lastname"
@@ -130,12 +128,12 @@ export default function Contact() {
                   onChange={handleChange}
                   placeholder="Durden"
                   type="text"
-                  className="p-[10px] rounded-[4px] outline-none border-none bg-zinc-800 text-white"
+                  className="p-[8px] rounded-[4px] outline-none border-none bg-zinc-800 text-white text-sm"
                 />
               </div>
             </div>
 
-            <div className="flex flex-col space-y-2 w-full mb-4">
+            <div className="flex flex-col space-y-1 w-full mb-3">
               <label htmlFor="email">Email Address</label>
               <input
                 id="email"
@@ -144,11 +142,11 @@ export default function Contact() {
                 onChange={handleChange}
                 placeholder="projectmayhem@fc.com"
                 type="email"
-                className="p-[10px] rounded-[4px] outline-none border-none bg-zinc-800 text-white"
+                className="p-[8px] rounded-[4px] outline-none border-none bg-zinc-800 text-white text-sm"
               />
             </div>
 
-            <div className="flex flex-col space-y-2 w-full mb-4">
+            <div className="flex flex-col space-y-1 w-full mb-3">
               <label htmlFor="message">Enter Your Message</label>
               <textarea
                 id="message"
@@ -156,12 +154,12 @@ export default function Contact() {
                 value={formData.message}
                 onChange={handleChange}
                 placeholder="Write a Message....."
-                className="p-[10px] rounded-[4px] outline-none border-none resize-none h-[140px] bg-zinc-800 text-white"
+                className="p-[8px] rounded-[4px] outline-none border-none resize-none h-[100px] bg-zinc-800 text-white text-sm"
               />
             </div>
 
             <button
-              className="bg-blue-900 relative group/btn w-full text-white rounded-md h-10 font-medium"
+              className="bg-blue-900 relative group/btn w-full text-white rounded-md h-8 font-medium text-sm"
               type="submit"
             >
               {!loadingMessage.loading ? "Submit" : "Sending..."}
